@@ -23,33 +23,72 @@
     <body>
         <div class="container">
             <div class="navbar">
-                <a href="index.html">Sportovi</a>
-                <a href="#news">Novosti</a>
-                <a href="#contact">Tenis</a>
-                
+                <button id="btn--pocetna">
+                    Početna
+                </button>  
+                <div class="dropdown">
+                    <button class="dropbtn">Sportovi</button>
+                    <div class="dropdown-content">
+                      <a href="Fudbal.html">Fudbal</a>
+                      <a href="#">Kosarka</a>
+                      <a href="#">Odbojka</a>
+                    </div>
+                  </div>
+                  <button class="nav--button" id="btn--novosti">
+                    Novosti
+                </button>
+                <button class="nav--button" id="btn--login">
+                    Log in
+                </button>                
               </div>
         </div>
         
           <div>
             <h1 class="naslov">Sportić</h1>
         </div>
-        
-        <div>
-            <p>Text ovde</p>
-        </div>
-        
-        <div id="sportovi"></div>
 
         <div>
             <table>
                <tr>
                 <th>
                     <p class="fb-tekst">Fudbal je igr...</p>
-                    <button class="btn btn--fudbal" id="klik">Fudbal</button>
+                    <button class="btn btn--fudbal" id="fudbal">Fudbal</button>
+                </th>
+            </table>
+        </div>
+        <div>
+            <table>
+               <tr>
+                <th class="th--kosarka">
+                    <p class="kk-tekst">Fudbal je igr...</p>
+                    <button class="btn btn--kosarka" id="kosarka">Kosarka</button>
+                </th>
+            </table>
+        </div>
+        <div>
+            <table>
+               <tr>
+                <th>
+                    <p class="fb-tekst">Fudbal je igr...</p>
+                    <button class="btn btn--fudbal" id="odbojka">Fudbal</button>
                 </th>
             </table>
         </div>
       
-        <script src="script.js"></script>
+        <script type="text/javascript">
+            document.getElementById("fudbal").onclick = function () {
+                location.href = "Fudbal.html";
+            };
+
+            document.getElementById("btn--pocetna").onclick = function () {
+                location.href = "index.html";
+            };
+            document.getElementById("btn--novosti").onclick = function () {
+                location.href = "#";
+            };
+            document.getElementById("btn--login").onclick = function () {
+                location.href = "#";
+            };
+        </script>
     </body>
 </html> 

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sportić</title>
+    
+        <link rel="stylesheet" href="css/style.css">
+    
+        <style>
+            body {
+                background-image: url('img/proba_2.jpeg');
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+                background-size: cover;
+              }
+              .btn--fudbal{
+                background-image: url('img/fudbal.jpg');
+                background-size: cover;
+              }
+        </style>
+    </head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <button id="btn--pocetna">
+                Početna
+            </button>  
+            <div class="dropdown">
+                <button class="dropbtn">Sportovi</button>
+                <div class="dropdown-content">
+                  <a href="Fudbal.html">Fudbal</a>
+                  <a href="#">Kosarka</a>
+                  <a href="#">Odbojka</a>
+                </div>
+              </div>
+              <button class="nav--button" id="btn--novosti">
+                Novosti
+            </button>
+            <button class="nav--button" id="btn--login">
+                Log in
+            </button>                
+          </div>
+    </div>
+
+
+    
+
+        <div class="desna-strana">
+            <form class="form">
+                <div>
+                    <label for="username" class="ime">Username:</label>
+                <input type="text" id="username" name="username" required>
+                
+                <label for="email" class="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="password" class="lozinka">Password:</label>
+                <input type="password" id="password" name="password" required>
+                </div>
+                
+                <div style="white-space:nowrap;" class="container2">
+                <label for="M">M</label>
+                <input type="radio" id="M" name="Pol" value="M" required>
+    
+                <label for="Ž">Ž</label>
+                <input type="radio" id="Ž" name="Pol" value="Ž">
+                </div>
+                <div>
+                    <button type="button" onclick="login()">Login</button>
+                </div>
+                
+            </form>
+        </div>
+
+
+
+
+
+
+    <script type="text/javascript">
+        document.getElementById("btn--pocetna").onclick = function () {
+            location.href = "index.html";
+        };
+        document.getElementById("btn--novosti").onclick = function () {
+            location.href = "#";
+        };
+        document.getElementById("btn--login").onclick = function () {
+            location.href = "login.html";
+        };
+        document.getElementById("fudbal").onclick = function () {
+            location.href = "Fudbal.html";
+        };
+
+
+        document.getElementById().onclick = function (){
+
+        };
+
+
+
+    </script>
+</body>
+</html>

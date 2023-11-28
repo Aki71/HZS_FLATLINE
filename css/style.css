@@ -147,6 +147,34 @@ button{
    float: right; 
 }
 
+.btn--odbojka{
+  color: black;
+  font-weight: bold;
+  text-align: left;
+  float: right;
+}
+
+.btn--tenis{
+  color: black;
+  font-weight: bold;
+  text-align: left;
+  float: right;
+}
+
+.btn--veslanje{
+  color: black;
+  font-weight: bold;
+  text-align: left;
+  float: right;
+}
+
+.btn--macevanje{
+  color: black;
+  font-weight: bold;
+  text-align: left;
+  float: right;
+}
+
 .container {
    display: flex;
    justify-content: center;
@@ -177,7 +205,7 @@ button{
  float: center;
  border-radius: 10px;
  background-color: #666363;
- width: 76px;
+ width: 85px;
  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
  z-index: 1;
 }
@@ -231,4 +259,17 @@ input {
 .email{
   color: black;
   font-weight: bold;
+}
+
+
+.novosti-kontent{
+  backdrop-filter: blur(20px);
+  height: 85px;
+  border-radius: 20px;
+  text-wrap: wrap;
+}
+
+.leva-strana-novost{
+  float: left;
+  width: 48%;
 }

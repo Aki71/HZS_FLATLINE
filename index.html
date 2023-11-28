@@ -9,13 +9,17 @@
 
     <style>
         body {
-            background-image: url('img/proba_2.jpeg');
+            background-image: url('img/background_index.jpeg');
             background-repeat: no-repeat;
             background-attachment: fixed;
             background-size: cover;
           }
           .btn--fudbal{
             background-image: url('img/fudbal.jpg');
+            background-size: cover;
+          }
+          .btn--kosarka{
+            background-image: url('img/basket.png');
             background-size: cover;
           }
     </style>
@@ -32,6 +36,10 @@
                       <a href="Fudbal.html">Fudbal</a>
                       <a href="#">Kosarka</a>
                       <a href="#">Odbojka</a>
+                      <a href="#">Macevanje</a>
+                      <a href="#">Tenis</a>
+                      <a href="#">Veslanje</a>
+
                     </div>
                   </div>
                   <button class="nav--button" id="btn--novosti">
@@ -57,7 +65,7 @@
                     <table>
                        <tr>
                         <th class="th--kosarka">
-                            <p class="fb-tekst">Fudbal je igr...</p>
+                            <p class="fb-tekst">Kosarka je igr...</p>
                             <button class="btn btn--kosarka" id="kosarka">Kosarka</button>
                         </th>
                     </table>
@@ -66,8 +74,8 @@
                     <table>
                        <tr>
                         <th>
-                            <p class="fb-tekst">Fudbal je igr...</p>
-                            <button class="btn btn--fudbal" id="odbojka">Fudbal</button>
+                            <p class="fb-tekst">Odbojka je igr...</p>
+                            <button class="btn btn--odbojka" id="odbojka">Odbojka</button>
                         </th>
                     </table>
                 </div>
@@ -75,8 +83,8 @@
                     <table>
                        <tr>
                         <th>
-                            <p class="fb-tekst">Fudbal je igr...</p>
-                            <button class="btn btn--fudbal" id="odbojka">Fudbal</button>
+                            <p class="fb-tekst">Tenis je igr...</p>
+                            <button class="btn btn--tenis" id="tenis">Tenis</button>
                         </th>
                     </table>
                 </div>
@@ -84,8 +92,8 @@
                     <table>
                        <tr>
                         <th>
-                            <p class="fb-tekst">Fudbal je igr...</p>
-                            <button class="btn btn--fudbal" id="odbojka">Fudbal</button>
+                            <p class="fb-tekst">Macevanje je igr...</p>
+                            <button class="btn btn--macevanje" id="macevanje">Macevanje</button>
                         </th>
                     </table>
                 </div>
@@ -93,20 +101,11 @@
                     <table>
                        <tr>
                         <th>
-                            <p class="fb-tekst">Fudbal je igr...</p>
-                            <button class="btn btn--fudbal" id="odbojka">Fudbal</button>
+                            <p class="fb-tekst">Veslanje je igr...</p>
+                            <button class="btn btn--veslanje" id="veslanje">Veslanje</button>
                         </th>
                     </table>
-                </div>
-                <div>
-                    <table>
-                       <tr>
-                        <th>
-                            <p class="fb-tekst">Fudbal je igr...</p>
-                            <button class="btn btn--fudbal" id="odbojka">Fudbal</button>
-                        </th>
-                    </table>
-                </div>
+                </div>  
             </div>
         
       
@@ -119,7 +118,7 @@
                 location.href = "index.html";
             };
             document.getElementById("btn--novosti").onclick = function () {
-                location.href = "#";
+                location.href = "novosti.html";
             };
             document.getElementById("btn--login").onclick = function () {
                 location.href = "login.html";

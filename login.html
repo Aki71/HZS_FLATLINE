@@ -9,7 +9,7 @@
     
         <style>
             body {
-                background-image: url('img/proba_2.jpeg');
+                background-image: url('img/background_index.jpeg');
                 background-repeat: no-repeat;
                 background-attachment: fixed;
                 background-size: cover;
@@ -51,9 +51,6 @@
                 <div>
                     <label for="username" class="ime">Username:</label>
                 <input type="text" id="username" name="username" required>
-                
-                <label for="email" class="email">Email:</label>
-                <input type="email" id="email" name="email" required>
 
                 <label for="password" class="lozinka">Password:</label>
                 <input type="password" id="password" name="password" required>
@@ -64,33 +61,18 @@
                 <input type="radio" id="M" name="Pol" value="M" required>
     
                 <label for="Ž">Ž</label>
-                <input type="radio" id="Ž" name="Pol" value="Ž">
+                <input type="radio" id="Z" name="Pol" value="Ž">
                 </div>
+                <textarea id="description" name="description" rows="4" cols="35"></textarea>
+
+
+
                 <div>
-                    <button type="button" onclick="login()">Login</button>
+                    <button type="button" onclick="createUser()">Login</button>
                 </div>
                 
             </form>
         </div>
-
-
-
-
-
-
-        <script type="text/javascript">
-            document.getElementById("btn--pocetna").onclick = function () {
-                location.href = "index.html";
-            };
-            document.getElementById("btn--novosti").onclick = function () {
-                location.href = "novosti.html";
-            };
-            document.getElementById("btn--login").onclick = function () {
-                location.href = "login.html";
-            };
-            document.getElementById("fudbal").onclick = function () {
-                location.href = "Fudbal.html";
-            };
-        </script>
+        <script src="pokusaj/demo.js" defer></script>
 </body>
 </html>
